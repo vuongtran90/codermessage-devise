@@ -1,0 +1,25 @@
+<div class="form">
+      <p><%= image_tag("http://i.imgur.com/GQnJwSG.png?1") %></p>
+      <p>NEW MESSAGE</p>
+    	<%= form_for :message, url: messages_path do |f| %>
+    	<div class="selectUser">
+        	<span>SELECT USER</span>
+    		<ul>   
+    			<% @recipients.each do |user| %>
+    				<label for="user<%= user.id %>" >
+    					<li>
+    						<span class=""><%= user.email %></span>
+    						<%= check_box_tag "message[user_tokens][]", user.id, @message.users.include?(user), id: "user#{user.id}" %>
+    					</li>
+    				</label>
+    			<% end %>
+    		</ul>
+    	</div>	
+		<%= f.text_area :body,  id: "url", placeholder: "MESSAGE" %>
+
+		<div>
+			<%= f.submit "SEND", :class => 'inputSubmit' %>
+		</div>
+
+	<% end %>
+</div>

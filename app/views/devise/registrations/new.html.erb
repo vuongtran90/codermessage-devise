@@ -1,34 +1,13 @@
-<h2>Sign up</h2>
+<div class="form">
+  <p><%= image_tag("http://i.imgur.com/GQnJwSG.png?1") %></p>
+  <p>SIGN UP AND BEGIN</p>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.username_field :username, autofocus: true %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+        <%= f.text_field :username, :placeholder => 'USERNAME', :class => 'inputText' %>
+        <%= f.email_field :email, autofocus: true, :placeholder => 'EMAIL', :class => 'inputText' %>
+        <%= f.password_field :password, autocomplete: "off", :placeholder => 'PASSWORD', :class => 'inputText' %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => 'PASSWORD CONFIRMATION', :class => 'inputText' %>
+        <%= f.submit "SIGN UP", :class => 'inputSubmit' %>
+    <% end %>
+</div>

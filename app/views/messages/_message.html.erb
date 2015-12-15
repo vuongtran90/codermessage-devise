@@ -1,0 +1,7 @@
+<% @messages.each do |message| %>
+        <% if message.message.html.present? %>
+        <%= message.message.html.html_safe %>
+        <% end %>
+        <%= message.message.content %>
+        <%= link_to message.message.sender.name, message.message.sender %>
+<% end %>

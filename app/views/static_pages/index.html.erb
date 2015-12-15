@@ -1,0 +1,4 @@
+<p class="welcomeImg"><%= image_tag("http://i.imgur.com/cwnanYW.png") %></p>
+  <% if current_user %>
+    <p class="welcomeEmail"><%= @user.email %></p>
+  <% end %>

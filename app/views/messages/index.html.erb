@@ -1,0 +1,12 @@
+	<% @messages.each do |message| %>
+			<div class="form message">
+			    <div class="iconMessage"><%= image_tag('http://i.imgur.com/7Dj58Qd.png') %></div>
+				<div>
+					<p><%= message.message.body %></p>
+				</div>
+
+				<div>
+					<span>- </span><%= message.message.sender.username %>
+				</div>
+			</div>
+		<% end %>
