@@ -25,6 +25,10 @@ border-radius: 5px;
 }
 header nav a {
 color: #fff;
+transition: all 0.3s;
+}
+header nav a:hover {
+color: #EA504E;
 }
 .logo {
 float: left;
@@ -170,4 +174,16 @@ font-size: 14px;
 position: absolute;
 top: -16px;
 left: -16px;
+}
+.friend {
+overflow: hidden;
+}
+.friend span {
+float: left;
+}
+.friend a {
+font-size: 40px;
+line-height: 0.6;
+color: #fff;
+float: right;
 }
