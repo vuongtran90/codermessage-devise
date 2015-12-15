@@ -82,8 +82,8 @@ letter-spacing: 1px;
 color: #EA504E;
 margin-top: 20px;
 background: #fff;
--webkit-transition: all 0.5s; /* Safari */
-transition: all 0.5s;
+-webkit-transition: all 0.3s; /* Safari */
+transition: all 0.3s;
 cursor: pointer;
 }
 .inputSubmit:hover {
@@ -153,7 +153,7 @@ display: inline-block;
 .message {
 margin: 0px auto 30px;
 position: relative;
-width: 880px;
+width: 700px;
 }
 .message p {
 text-align: justify;
