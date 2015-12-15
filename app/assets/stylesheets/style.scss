@@ -1,5 +1,4 @@
 body {
-font-family: "Raleway", Arial, sans-serif;
 background: #252328;
 color: #fff;
 }
@@ -84,6 +83,7 @@ margin-top: 20px;
 background: #fff;
 -webkit-transition: all 0.5s; /* Safari */
 transition: all 0.5s;
+cursor: pointer;
 }
 .inputSubmit:hover {
 background: #EA504E;
