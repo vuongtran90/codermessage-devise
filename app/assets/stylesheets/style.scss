@@ -155,7 +155,8 @@ margin: 0px auto 30px;
 position: relative;
 }
 .message p {
-text-align: left;
+text-align: justify;
+text-indent: 10px;
 }
 .message > div:last-child {
 border-top: 1px solid #fff;
