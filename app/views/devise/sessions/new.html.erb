@@ -3,7 +3,7 @@
   <p>LOGIN AND CONTINUE MESSAGING</p>
   
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <%= f.email_field :email, autofocus: true, :placeholder => 'EMAL', :class => 'inputText' %>
+      <%= f.email_field :email, autofocus: true, :placeholder => 'EMAIL', :class => 'inputText' %>
       <%= f.password_field :password, autocomplete: "off", :placeholder => 'PASSWORD', :class => 'inputText' %>
       <%= f.submit "LOG IN", :class => 'inputSubmit' %>
   <% end %>

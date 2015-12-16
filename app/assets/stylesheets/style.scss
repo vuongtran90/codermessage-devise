@@ -2,9 +2,10 @@ body {
 font-family: "Raleway", Arial, sans-serif;
 background: #252328;
 color: #fff;
+letter-spacing: 0.6px;
 }
 .container {
-padding: 30px 0;
+padding: 30px 0 15px;
 }
 header {
 color: #fff;
@@ -53,16 +54,21 @@ margin: 0 auto;
 overflow: hidden;
 }
 .form {
-width: 460px;
-padding: 20px;
+width: 70%;
+padding: 2% 2% 3%;
+min-width: 320px;
 background: #353338;
 margin: 0 auto 20px;
 text-align: center;
 border-radius: 5px;
 }
 .form input {
-width: 420px;
+// .form input[type=text],
+// .form input[type=textarea],
+// .form input[type=submit]{
+width: 80%;
 height: 50px;
+min-width: 300px;
 margin-bottom: 15px;
 border: none;
 border-radius: 5px;
@@ -121,7 +127,8 @@ width: 14px;
 height: 14px;
 }
 textarea {
-width: 420px;
+width: 80%;
+min-width: 300px;
 min-height: 100px;
 border: none;
 border-radius: 5px;
@@ -134,12 +141,14 @@ padding: 10px;
 border: 1px solid #fff;
 position: relative;
 border-radius: 5px;
+width: 80%;
 margin-bottom: 20px;
+margin: 0 auto 20px auto;
 }
 .selectUser > span {
 position: absolute;
 top: -12px;
-left: 0px;
+left: 10px;
 background: #353338;
 padding: 0 5px;
 font-weight: 600;
@@ -150,18 +159,19 @@ margin-top: 20px;
 margin-bottom: 15px;
 }
 .selectUser > ul span {
-width: 370px;
+width: 88%;
 text-align: left;
 display: inline-block;
 }
 .message {
 margin: 0px auto 30px;
 position: relative;
-width: 700px;
+padding: 2%;
 }
 .message p {
 text-align: justify;
 text-indent: 10px;
+padding-bottom: 10px;
 }
 .message > div:last-child {
 border-top: 1px solid #fff;
@@ -186,4 +196,12 @@ font-size: 40px;
 line-height: 0.6;
 color: #fff;
 float: right;
+}
+footer {
+color: #fff;
+padding: 10px 2% 15px;
+font-size: 14px;
+border-top: 1px solid #353338;
+text-transform: uppercase;
+text-align: center;
 }

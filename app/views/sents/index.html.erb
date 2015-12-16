@@ -1,8 +1,20 @@
-<% @messages.each do |message| %>
-  <div class="bd-callout bd-callout-info">
-    <h4><%= message.sender.username %></h4>
-    <p>
-      <%= message.body %>
-    </p>
-  </div>
-<% end %>
+<!--<% @messages.each do |message| %>-->
+<!--  <div class="bd-callout bd-callout-info">-->
+<!--    <h4><%= message.sender.username %></h4>-->
+<!--    <p>-->
+<!--      <%= message.body %>-->
+<!--    </p>-->
+<!--  </div>-->
+<!--<% end %>-->
+	<% @messages.each do |message| %>
+			<div class="form message">
+			    <div class="iconMessage"><%= image_tag('http://i.imgur.com/7Dj58Qd.png') %></div>
+				<div>
+					<p><%= message.body %></p>
+				</div>
+
+				<div>
+					<span>- </span><%= message.sender.username %>
+				</div>
+			</div>
+		<% end %>
