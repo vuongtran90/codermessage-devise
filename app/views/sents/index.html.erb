@@ -1,0 +1,8 @@
+<% @messages.each do |message| %>
+  <div class="bd-callout bd-callout-info">
+    <h4><%= message.sender.username %></h4>
+    <p>
+      <%= message.body %>
+    </p>
+  </div>
+<% end %>

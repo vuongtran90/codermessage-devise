@@ -1,0 +1,2 @@
+module SentsHelper
+end
