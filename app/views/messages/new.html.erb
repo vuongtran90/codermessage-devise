@@ -1,1 +1,25 @@
-<%= render 'messages/recipient' %>
+<div class="form">
+      <p><%= image_tag("http://i.imgur.com/GQnJwSG.png?1") %></p>
+      <p>NEW MESSAGE</p>
+    	<%= form_for :message, url: messages_path do |f| %>
+    	<div class="selectUser">
+        	<span>SELECT FRIEND</span>
+    		<ul>   
+    			<% @user.friendships.each do |user| %>
+    				<label for="user<%= user.friend.id %>" >
+    					<li>
+    						<span class=""><%= user.friend.username %></span>
+    						<%= check_box_tag "message[user_tokens][]", user.friend.id, @message.users.include?(user), id: "user#{user.friend.id}" %>
+    					</li>
+    				</label>
+    			<% end %>
+    		</ul>
+    	</div>	
+		<%= f.text_area :body,  id: "url", placeholder: "MESSAGE" %>
+
+		<div>
+			<%= f.submit "SEND", :class => 'inputSubmit' %>
+		</div>
+
+	<% end %>
+</div>

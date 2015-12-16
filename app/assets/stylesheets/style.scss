@@ -237,9 +237,17 @@ top: 30px;
 float: none;
 margin-left: 0;
 }
+.subNav > li:first-child a {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.subNav > li:last-child a {
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
 .subNav a {
 background: #fff;
-padding: 5px 10px;
+padding: 8px 10px;
 border-bottom: 1px solid darkgray;
 width: 150px;
 color: darkgray;
@@ -249,4 +257,7 @@ display: block;
 }
 nav a {
 display: block;
+}
+nav > ul > li:first-child {
+margin-left: 0;
 }
