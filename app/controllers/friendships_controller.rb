@@ -19,7 +19,10 @@ class FriendshipsController < ApplicationController
     
     def index
       @users = User.where('id != ?', current_user.id)
-      @user = current_user
+      @user = current_user.friendships
+      # @friends = Friendship.select('friend_id').where('user_id = ?', current_user.id)
+      # @users = User.where(id: @friends)
+      # @user = User.where(id: [1,2])
     end
     
     def show

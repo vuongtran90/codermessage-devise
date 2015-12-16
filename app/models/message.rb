@@ -11,4 +11,10 @@ class Message < ActiveRecord::Base
 	    self.user_ids = ids
 	end
 	
+    def mark_read
+      self.read = true
+      self.read_at = DateTime.now
+      self.save
+    end
+	
 end
