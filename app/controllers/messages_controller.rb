@@ -3,8 +3,8 @@ class MessagesController < ApplicationController
 
 	def new
 		@message = Message.new
-		@user = current_user.following
-		@users = User.all
+		@user = current_user
+		@recipients = User.all
 	end
 
 	def create
@@ -21,11 +21,6 @@ class MessagesController < ApplicationController
 
 	def index
 		@messages = Recipient.where(:user_id => current_user.id).order("created_at DESC")
-	end
-
-	def new
-		@message = Message.new
-		@recipients = User.all
 	end
 
 	private

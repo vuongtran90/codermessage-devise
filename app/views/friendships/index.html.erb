@@ -1,7 +1,7 @@
 
-<% @users.each do |user| %>
+<% @user.friendships.each do |user| %> 
     <div class="form friend">
-        <span><%= user.username %></span>
-        <%= link_to "+", friendships_path(:friend_id => user), :method => :post %>
+        <span><%= user.friend.username %></span>
+        <%= link_to "-", user, :method => :delete %>
     </div>
 <% end %>
