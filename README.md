@@ -23,7 +23,8 @@ The following **required** functionality is complete:
 
 ## Notes
 
-- [ ] Add friends only once, friend have both side
+* [ ] User can read a message's content only once. Once the message has been read, the user will see a page indicating the message has already been read.
+* [ ] Unread messages should be **bold** or something similar in the list of messages. 
 
 ## License
 
