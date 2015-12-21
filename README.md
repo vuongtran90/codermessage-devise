@@ -27,6 +27,12 @@ The following **required** functionality is complete:
 * [ ] Unread messages should be **bold** or something similar in the list of messages.
 * [ ] Add friends once, friend have both side
 
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+![Video Walkthrough](http://imageshack.com/a/img911/8608/m5RZAL.gif)
+
 ## License
 
     Copyright 2015 Vuong Tran
